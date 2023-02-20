@@ -22,7 +22,6 @@
         <springdoc-openapi-ui.version>1.6.13</springdoc-openapi-ui.version>
         <modelmapper.version>3.1.0</modelmapper.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
-        <validation-api.version>2.0.1.Final</validation-api.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
     </properties>
     <dependencies>
@@ -109,11 +108,6 @@
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>
             <version>${modelmapper.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>${validation-api.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.xml.bind</groupId>
