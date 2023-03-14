@@ -42,7 +42,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         ErrorResponseDTO errorResponseDTO = ErrorResponseDTO.builder()
                 .dateTime(OffsetDateTime.now())
                 .code(ex.getHttpStatus().value())
-                .message(ex.getMessage())
+                .message(ex.getErrorMessage())
                 .build();
 
         return new ResponseEntity<>(errorResponseDTO, ex.getHttpStatus());
